@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617 0, #000 55%, #020617 100%);
+  font-family: "poppins";
+}
+
+#root {
+  min-height: 100vh;
+}
