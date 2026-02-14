@@ -310,7 +310,7 @@ function App() {
                   />
                   <ContactLink
                     label="Facebook"
-                    href="dulara.abhishek.7"
+                    href="https://web.facebook.com/dulara.abhishek.7/"
                     handle="Dulara Abhishek"
                   />
                   <ContactLink
