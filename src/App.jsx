@@ -17,12 +17,12 @@ const projects = [
     tags: ['Arduino', 'ESP32', 'WebTechnology'],
   }, ,
   {
-  title: 'BLE based University Indoor Navigator (Pending)',
-  description:
-    'An indoor wayfinding solution using BLE beacons and 2D mapping to help visitors navigate university buildings where GPS signals are unreliable.',
-  imageAlt: 'BLE Beacon based indoor navigation map interface',
-  tags: ['BLE Beacon', 'IoT','ESP32', '2D Mapping', 'Indoor Positioning', 'MQTT'],
-},
+    title: 'BLE based University Indoor Navigator (Pending)',
+    description:
+      'An indoor wayfinding solution using BLE beacons and 2D mapping to help visitors navigate university buildings where GPS signals are unreliable.',
+    imageAlt: 'BLE Beacon based indoor navigation map interface',
+    tags: ['BLE Beacon', 'IoT', 'ESP32', '2D Mapping', 'Indoor Positioning', 'MQTT'],
+  },
 ]
 
 const skills = [
@@ -320,7 +320,7 @@ function App() {
                   />
                   <ContactLink
                     label="Email"
-                    href="dularaabhishek91@gmail.com"
+                    href="mailto:dularaabhishek91@gmail.com" 
                     handle="dularaabhishek91@gmail.com"
                   />
                 </div>
