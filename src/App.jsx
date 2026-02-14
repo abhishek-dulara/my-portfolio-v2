@@ -3,34 +3,31 @@ import profileImg from './assets/myphoto.png'
 
 const projects = [
   {
-    title: 'Smart Home Energy Dashboard',
+    title: 'Smart Home Monitoring System',
     description:
-      'Real-time monitoring and control dashboard for home energy usage, built on low-power IoT nodes and cloud analytics.',
-    imageAlt: 'Smart home energy dashboard mockup',
-    tags: ['React', 'IoT', 'MQTT'],
-  },
+      'An intelligent occupancy and environment monitoring system that tracks real-time temperature and human presence to reduce energy wastage through smart lighting insights.',
+    imageAlt: 'IoT Smart Energy Monitoring Prototype',
+    tags: ['ESP32', 'Sensors', 'Firebase', 'Real-time Data', 'Sustainability'],
+  }, ,
   {
-    title: 'Industrial Sensor Network',
+    title: 'Autonomous Serve Robot',
     description:
-      'Resilient sensor mesh for industrial environments with predictive maintenance alerts and over-the-air updates.',
-    imageAlt: 'Industrial sensor network visualization',
-    tags: ['C', 'LoRaWAN', 'Edge Computing'],
-  },
+      'A robotic automation system for restaurants that delivers orders from the kitchen to specific tables using a web based dashboard and autonomous navigation.',
+    imageAlt: 'Autonomous Food Delivery Robot Prototype',
+    tags: ['Arduino', 'ESP32', 'WebTechnology'],
+  }, ,
   {
-    title: 'Environmental Monitoring Platform',
-    description:
-      'Distributed air quality and weather monitoring platform with geospatial visualizations and alerting.',
-    imageAlt: 'Environmental monitoring data visualization',
-    tags: ['Python', 'Timeseries DB', 'Grafana'],
-  },
+  title: 'BLE based University Indoor Navigator (Pending)',
+  description:
+    'An indoor wayfinding solution using BLE beacons and 2D mapping to help visitors navigate university buildings where GPS signals are unreliable.',
+  imageAlt: 'BLE Beacon based indoor navigation map interface',
+  tags: ['BLE Beacon', 'IoT','ESP32', '2D Mapping', 'Indoor Positioning', 'MQTT'],
+},
 ]
 
 const skills = [
   { name: 'Embedded Systems', short: 'EMB' },
-  { name: 'PCB Design', short: 'PCB' },
   { name: 'IoT Protocols (MQTT, LoRaWAN)', short: 'NET' },
-  { name: 'Cloud Integration', short: 'CLD' },
-  { name: 'Data Visualization', short: 'DATA' },
   { name: 'Prototyping & Testing', short: 'LAB' },
 ]
 
@@ -102,7 +99,7 @@ function App() {
                     Dulara Abhishek
                   </h1>
                   <p className="text-sm font-medium uppercase tracking-[0.3em] text-blue-400">
-                    IoT Engineer
+                    IoT Engineer/Fullstacks
                   </p>
                 </div>
 
@@ -158,17 +155,16 @@ function App() {
                     About Me
                   </h2>
                   <p className="max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-[15px]">
-                    As an IoT Engineer, I specialize in taking ideas from whiteboard sketches to
-                    fully deployed systems. My work spans embedded firmware, sensor selection,
-                    secure connectivity, and cloud integrations that provide meaningful,
-                    observable data. I enjoy designing architectures that are robust, low-power,
-                    and easy to maintain.
+                    As an IoT Engineer, I specialize in embedded firmware, sensor selection, secure connectivity
+                    and cloud integrations that provide meaningful,
+                    observable data. I enjoy designing architectures
+                    that are robust, low-power, and easy to maintain.
                   </p>
                   <p className="max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-[15px]">
                     I have hands-on experience with microcontrollers, industrial protocols,
                     wireless networks, and modern DevOps practices. Whether it&apos;s building a
-                    proof-of-concept or hardening a production deployment, I focus on signal
-                    quality, system reliability, and clear, well-documented interfaces.
+                    proof of concept or hardening a production deployment, I focus on signal
+                    quality, system reliability, and clear, well documented interfaces.
                   </p>
                 </div>
 
@@ -180,7 +176,7 @@ function App() {
                     <div className="flex justify-between gap-4">
                       <dt className="text-slate-400">Focus areas</dt>
                       <dd className="text-right">
-                        Embedded IoT, telemetry, monitoring, edge analytics
+                        Embedded IoT, Robotics, Automation Systems
                       </dd>
                     </div>
                     <div className="flex justify-between gap-4">
@@ -192,7 +188,7 @@ function App() {
                     <div className="flex justify-between gap-4">
                       <dt className="text-slate-400">Preferred stack</dt>
                       <dd className="text-right">
-                        C / C++, Python, React, cloud IoT platforms
+                        Python, React, cloud IoT platforms, Robotics
                       </dd>
                     </div>
                   </dl>
@@ -212,7 +208,7 @@ function App() {
                   </h2>
                   <p className="mt-2 max-w-xl text-xm text-slate-300">
                     A curated set of recent work that highlights my approach to designing
-                    reliable, observable IoT systems—from device firmware to data
+                    reliable, observable IoT systems from device firmware to data
                     visualization.
                   </p>
                 </div>
@@ -227,9 +223,7 @@ function App() {
                     <div className="relative mb-4 h-32 overflow-hidden rounded-xl bg-slate-900">
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.35),transparent_55%),radial-gradient(circle_at_bottom,rgba(37,99,235,0.7),transparent_55%)] transition duration-200 group-hover:scale-105" />
                       <div className="relative flex h-full items-end justify-between p-3 text-[11px] text-slate-100">
-                        <span className="rounded-full bg-slate-950/70 px-2 py-1 text-[10px] uppercase tracking-[0.18em] text-slate-300">
-                          Project
-                        </span>
+
 
                       </div>
                     </div>
@@ -306,28 +300,28 @@ function App() {
                 <div className="space-y-3 text-sm">
                   <ContactLink
                     label="GitHub"
-                    href="https://github.com/your-username"
-                    handle="@your-username"
+                    href="https://github.com/abhishek-dulara"
+                    handle="abhishek-dulara"
                   />
                   <ContactLink
                     label="LinkedIn"
-                    href="https://www.linkedin.com/in/your-handle"
-                    handle="/in/your-handle"
+                    href="https://www.linkedin.com/in/dulara-abhishek-405365137/?trk=public-profile-join-page"
+                    handle="Dulara Abhishek"
                   />
                   <ContactLink
                     label="Facebook"
-                    href="https://www.facebook.com/your.profile"
-                    handle="/your.profile"
+                    href="dulara.abhishek.7"
+                    handle="Dulara Abhishek"
                   />
                   <ContactLink
                     label="WhatsApp"
-                    href="https://wa.me/1234567890"
-                    handle="+12 345 678 90"
+                    href="https://wa.me/+94768861019"
+                    handle="+94768861019"
                   />
                   <ContactLink
                     label="Email"
-                    href="mailto:you@example.com"
-                    handle="you@example.com"
+                    href="dularaabhishek91@gmail.com"
+                    handle="dularaabhishek91@gmail.com"
                   />
                 </div>
               </div>
