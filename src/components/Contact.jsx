@@ -1,17 +1,18 @@
 import React from 'react';
 
 const Contact = () => {
-  // Social media Links
   const contactLinks = [
     { name: "GITHUB", url: "https://github.com/abhishek-dulara", label: "View Detail" },
     { name: "LINKEDIN", url: "https://www.linkedin.com/in/dulara-abhishek-405365137/", label: "View Detail" },
-    { name: "WHATSAPP", url: "https://wa.me/94768861019", label: "View Detail" }, // ඔයාගේ නම්බර් එක මෙතනට දාන්න
-    { name: "EMAIL", url: "mailto:dularaabhishek91@gmail.com", label: "View Detail" }, // ඔයාගේ Email එක මෙතනට දාන්න
+    { name: "WHATSAPP", url: "https://wa.me/94768861019", label: "View Detail" },
+    { name: "EMAIL", url: "mailto:dularaabhishek91@gmail.com", label: "View Detail" },
   ];
 
   return (
     <section id="contact" className="min-h-screen flex items-center py-[100px] px-[24px]">
-      <div className="max-w-[1200px] mx-auto w-full">
+      {/* --- START OF OUTLINE BOX --- */}
+      <div className="max-w-[1200px] mx-auto w-full border border-blue-500/30 rounded-[32px] p-[40px] md:p-[60px]">
+        
         <div className="grid md:grid-cols-2 gap-[80px]">
           <div>
             <h2 className="text-[30px] font-[800] uppercase tracking-[4px] text-blue-500 mb-[16px]">Contact</h2>
@@ -20,9 +21,9 @@ const Contact = () => {
               thoughtful IoT design can make a real impact.
             </p>
           </div>
+
           <div className="space-y-[12px]">
             {contactLinks.map((link) => (
-              // 2. wrap whole card in <a> 
               <a
                 key={link.name}
                 href={link.url}
@@ -40,7 +41,9 @@ const Contact = () => {
             ))}
           </div>
         </div>
+
       </div>
+      {/* --- END OF OUTLINE BOX --- */}
     </section>
   );
 };
