@@ -29,8 +29,10 @@ const Projects = () => {
         <img src={urlFor(project.image).url()} alt={project.title} className="w-full h-[200px] object-cover" />
       )}
       <div className="p-[24px]">
-        <h3 className="text-white text-[20px] font-[700] mb-[12px]">{project.title}</h3>
-        <p className="text-slate-400 text-[14px] mb-[16px]">{project.description}</p>
+        <h3 className="text-white text-[25px] font-[700] mb-[12px]">{project.title}</h3>        {/* Project title text size */}
+        <p className="text-slate-400 text-[16px] mb-[16px] leading-relaxed whitespace-pre-line">  {/* Project description text size */}
+          {project.description}
+        </p>    
         <div className="flex flex-wrap gap-[8px] mb-[20px]">
           {project.tags?.map((tag, index) => (
             <span key={index} className="text-[12px] text-blue-400 bg-blue-500/10 px-[10px] py-[4px] rounded-full">{tag}</span>
@@ -44,13 +46,13 @@ const Projects = () => {
   return (
     <section id="projects" className="py-[100px] px-[24px] bg-slate-950">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-white text-[28px] font-[700] mb-[32px] border-l-4 border-blue-500 pl-4 text-left">University Projects</h2>
-        <div className="grid md:grid-cols-3 gap-[24px] mb-[64px]">
+        <h2 className="text-white text-[30px] font-[700] mb-[32px] border-l-4 border-blue-500 pl-4 text-left">University Projects</h2>
+        <div className="grid md:grid-cols-2 gap-[24px] mb-[64px]">
           {universityProjects.map(project => <ProjectCard key={project._id} project={project} />)}
         </div>
 
-        <h2 className="text-white text-[28px] font-[700] mb-[32px] border-l-4 border-sky-400 pl-4 text-left">Additional Projects</h2>
-        <div className="grid md:grid-cols-3 gap-[24px]">
+        <h2 className="text-white text-[30px] font-[700] mb-[32px] border-l-4 border-sky-400 pl-4 text-left">Additional Projects</h2>
+        <div className="grid md:grid-cols-2 gap-[24px]">
           {additionalProjects.map(project => <ProjectCard key={project._id} project={project} />)}
         </div>
       </div>
@@ -58,5 +60,5 @@ const Projects = () => {
   );
 };
 
-// අන්න අර වැදගත්ම පේළිය මෙතනට දාන්න!
+
 export default Projects;
