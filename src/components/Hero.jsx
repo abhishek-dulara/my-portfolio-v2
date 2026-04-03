@@ -1,4 +1,5 @@
 import React from 'react';
+import myPhoto from '../assets/myphoto.png';
 
 const Hero = () => {
   return (
@@ -25,7 +26,7 @@ const Hero = () => {
           <div className="relative group">
             <div className="absolute -inset-[4px] bg-gradient-to-r from-blue-600 to-sky-400 rounded-[32px] blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-[32px] overflow-hidden border border-slate-800 bg-slate-900">
-              <img src="/profile-pic.jpg" alt="Dulara" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+              <img src={myPhoto} alt="Dulara" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
             </div>
           </div>
           <a href="/Dulara_Abhishek_CV.pdf" download className="group flex items-center gap-[12px] px-[24px] py-[12px] rounded-[16px] bg-slate-900 border border-slate-800 text-slate-300 hover:border-blue-500 hover:text-white transition-all shadow-xl">
